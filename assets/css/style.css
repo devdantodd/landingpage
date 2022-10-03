@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+/* CSS variables */
+:root {
+    --normal-font: 48px;
+    --bold-font: 600;
+    --bolder-font: 900;
+    --primary-color: #f9faf8;
+    --secondary-color: #e5e7eb;
+    --line-height: 1.7rem;
+}
+
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  transition: var(--transition);
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+nav {
+    background: #1f2937;
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    padding: 1rem 1.5rem;
+    box-shadow: 0;
+    margin: 0;
+    padding: 1;
+    box-sizing: ;
+    position: sticky;
+     top: 0;
+     left: 0;
+     z-index: 0;
+}
+
+.nav-item {
+    margin-left: 2rem;
+}
+
+.nav-link {
+    font-weight: var(--bold-font);
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #1f2937;
+    
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color)
+}
+a:hover {
+    color: var(--secondary-color)
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.9rem;
+    width: 1200px;
+    margin: 2rem auto 6rem;
+
+}
+
+.intro-text h1 {
+    font-size: 3em;
+    margin-bottom: 1rem;
+}
+
+.intro-text h3 {
+    margin-bottom: 0.5rem;
+}
+
+.p {
+    line-height: var(--line-height);
+}
+
+.intro1 {
+    color: var(--primary-color);
+}
+
+.intro2 {
+    color: var(--secondary-color);
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 0.6rem;
+    border: none;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    color: var(--primary-color);
+}
+
+.red { 
+    background-color: #000000;
+    margin-right: 1.5rem;
+}
+
+.red:hover {
+    background-color: #095cf7;
+}
+
+.blue {
+    background-color: #000000;
+}
+
+.blue:hover {
+    background-color: #095cf7;
+    color: #fff;
+}
+
+.fb-post {
+    max-width: 500rem;
+    border-top: 40px groove var(--primary-color);
+    border-bottom: 40px groove var(--primary-color);
+    border-right: 28px solid var(--secondary-color);
+    border-left: 28px solid var(--secondary-color);
+  }
+  
+  tvfoot-1 {
+    height: 90px;
+    width: 6px;
+    background-color: var(--primary-color);
+    transform: rotate(40deg);
+    position: relative;
+    top: -16px;
+    left: 200px;
+  }
+  tvfoot-2 {
+    height: 90px;
+    width: 6px;
+    background-color: var(--secondary-color);
+    transform: rotate(-40deg);
+    position: relative;
+    top: -105px;
+    left: 255px;
+  }
+
+  .about {
+    background-color: #f9faf8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5rem;
+    margin: 0;    
+
+  }
+
+  .about h3 {
+    font-size: 1.5em;
+    margin-bottom: -50px;
+    margin-top: 20px;
+  }
+
+  .about p {
+    font-size: 1.5em;
+  }
+
+  .about h3 {
+    
+  }
+
+  .about p {
+    
+    font-size: 1.8rem;
+  }
+
+.books-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: #e5e7eb;
+    padding: 3em;
+  }
+  .books-gallery img,
+  .books-gallery a {
+    width: 100%;
+    height: 100%;
+  }
+  .books-gallery a:first-child {
+    grid-row: 1/3;
+    grid-column: 1/3;
+  }
+  .books-gallery a:nth-child(2) {
+    grid-column: 3/5;
+  }
+
+.sub {
+  margin-top: 2rem;
+}
+ .sub h3 {
+  text-align: center;
+}
+
+form {
+  text-align: center;
+  margin: 0.4rem 2rem;
+}
+ .email-sub {
+  padding: 0.2rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;  
+ }
+ .email-sub:focus {
+  border: 1px solid var(--secondary-color);
+  outline: none;
+ }
+ .submit-btn {
+  background-color: black;
+  color: #fff;
+  padding: 0.3rem;
+  margin: 0 0.5rem;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #095cf7;
+}
+
+.social {
+  text-align: center;
+  margin: 2rem;
+}
+
+.socicons {
+  font-size: 1.3rem;
+}
+
+footer {
+  background-color: #1f2937;
+  text-align: center;
+  padding: 2rem;
+}
+
+.scroll-up {
+  position: fixed;
+  right: 0.5%;
+  bottom: 3%;
+  cursor: pointer;
+  
+}
+
+.up-arrow {
+  width: 3rem;
+  height: 3rem;
+  
+}
+
+
+
